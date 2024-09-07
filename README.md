@@ -22,3 +22,31 @@ We did use the same novel as before, as it made it easier to manually check ques
    - repeat for all questions; percent accuracy is the main metric for this benchmark.
 
 ![Diagram explaining chunking benchmark](assets/method.png)
+
+## Reproducibility
+
+### Setup
+
+Install `pipenv` if you haven't already:
+
+```bash
+pip3 install pipenv
+```
+
+Install the dependencies:
+
+```bash
+pipenv install
+```
+
+### Creating chunks
+
+If you would like to create the chunks yourself, you can do so by running the following:
+
+```bash
+python3 chunking_benchmark.get_chunks --vali_wallet VALI_COLDKEY --vali_hotkey VALI_HOTKEY --miner_uids "1" --chunk_size 400
+```
+
+This creates chunks for ai21, unstructured, and each miner specified in `--miner_uids`. These are saved to the specified `--out_dir` by datetime.
+
+To see all arguments, you can run: `python3 chunking_benchmark.get_chunks -h`
