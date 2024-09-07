@@ -46,6 +46,7 @@ class AI21ChunkRunner(BaseChunkRunner):
                     cur_text = ""
                 
                 cur_text += sentence + " "
+                
             
             if cur_text != "":
                 text_groups.append(cur_text)
