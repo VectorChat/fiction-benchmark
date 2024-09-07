@@ -4,6 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+nltk = "*"
+regex = "*"
+cohere = "*"
+python-dotenv = "*"
+matplotlib = "*"
+tiktoken = "*"
+langchain-ai21 = "*"
+transformers = "*"
+bittensor = "*"
+unstructured = "*"
 
 [dev-packages]
 ipykernel = "*"
